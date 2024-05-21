@@ -1,0 +1,309 @@
+/* UNIVERSAL STYLES */
+    h1, h2, h3, h4, h5, h6, p, .welcome-heading, .welcome-message, .sub-heading, .title, .subtitle, .contact-heading, .contact-input, .contact-form textarea[name="message"], .contact-form button {
+    font-family: 'Lato-Regular', sans-serif;
+  }
+
+  body {
+    font-family: 'Lato-Regular', sans-serif;
+    background-color:  #f2f2f7;
+  }
+  .section {
+    margin-bottom: 475px;
+  }
+
+.cta-button {
+    font-family: 'Lato-Bold', sans-serif;
+  }
+  
+/* DROPDOWN MENU STYLES */
+.menu-btn-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+  
+  .menu-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative; /* Set the parent container to relative positioning */
+  }
+
+  
+  /* Style for closed icon */
+  #closed-icon {
+    display: inline; 
+    filter: invert(1);/* Initially visible */
+  }
+  
+  /* Style for open icon */
+  #open-icon {
+    display: none;
+    filter: invert(1); /* Initially hidden */
+  }
+  
+  .menu {
+    display: none;
+    list-style-type: none;
+    background-color: #333; /* Dark grey box */
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+  
+  .menu li {
+    padding: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+  }
+  
+  .menu li a:hover {
+    background-color: #555; /* Darker grey on hover */
+  }
+  
+  /* HOME PAGE STYLES*/
+.welcome-section {
+    background-color: #f2f2f7;
+    padding: 150px 20px; /* Adjust padding as needed */
+    text-align: center;
+  }
+  
+  .name-container {
+    position: relative;
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  
+  .welcome-heading {
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333;
+    margin: 0; /* Reset margin */
+  }
+  
+  .welcome-message {
+    font-size: 36px; /* Adjust font size as needed */
+    color: #333;
+    margin: 0; /* Reset margin */
+  }
+  
+  .sub-heading {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 0;
+  }
+  
+  .cta-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #45a049;
+  }
+
+  /* ABOUT ME  STYLES*/
+
+  .about-me-details {
+    width: 300px; /* Adjust card width as needed */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 8px 8px rgba(69, 160, 73, 0.2), 0 0 0 4px rgba(69, 160, 73, 0.1); /* Add shadow effect */
+    margin: 0 auto 20px; /* Center the card horizontally and add margin to separate cards */
+    position: relative;
+    text-align: center; 
+}
+
+.about-me-details.show {
+    display: block;
+    text-align: center;
+
+}
+
+.about-me-details h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.about-me-details p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+  
+  /* PROJECT STYLES*/
+
+  .project-card {
+    width: 300px; /* Adjust card width as needed */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 8px 8px rgba(69, 160, 73, 0.2), 0 0 0 4px rgba(69, 160, 73, 0.1); /* Add shadow effect */
+    margin: 0 auto 20px; /* Center the card horizontally and add margin to separate cards */
+    position: relative;
+    text-align: center; 
+    
+  }
+  
+  .logo {
+    width: 48px; /* Adjust logo width as needed */
+    height: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    margin-bottom: 20px;
+  }
+  
+  .icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .icons img {
+    width: 18px; /* Adjust icon size as needed */
+    height: 18px;
+    margin-left: 5px;
+  }
+  
+  /*GET IN TOCUH*/
+
+  .contact-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px; 
+    text-align: center;/* Add margin below the heading */
+  }
+  
+  .contact-form {
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  .contact-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  
+  .contact-form textarea[name="message"] {
+    height: 120px;
+    resize: none;
+  
+
+  }
+  
+  .contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .name-container {
+    text-align: center;
+    padding: 0 20px; /* Center align the button */
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+  
+    bottom: 0;
+  }
+
+
+/* GitHub Icon styles */
+.github-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* LinkedIn Icon styles */
+.linkedin-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 10px; /* Add margin between GitHub and LinkedIn icons */
+  transition: transform 0.3s ease;
+}
+
+
+.linkedin-icon:hover {
+  transform: scale(1.2);
+}
+
+
+.github-icon:hover {
+  transform: scale(1.2);
+}
+
+a {
+  display: inline-block; /* Ensure the <a> elements are treated as blocks */
+  text-decoration: none; /* Remove underline */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  border: none; /* Remove border */
+}

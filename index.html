@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mason.Dev - My Portfolio</title>
+  <link rel="icon" type="image/png" href="images/hand-metal.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="content" id="content">
+    <div class="menu-btn-container">
+      <button class="menu-btn" onclick="toggleMenu()">
+        <img src="images/menu_closed.svg" id="closed-icon" alt="Menu Closed">
+        <img src="images/menu_open.svg" id="open-icon" alt="Menu Open">
+      </button>
+      <ul class="menu" id="menu">     
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hire">Connect</a></li>
+      </ul>
+    </div>
+    
+    <!-- Home Section -->
+    <div id="home" class="section welcome-section">
+      <div class="name-container">
+        <p class="welcome-heading">Hi my name is</p>
+        <p class="welcome-message">Matt Mason.</p>
+      </div>
+      <p class="sub-heading">I make things for the web.</p>
+      <a href="https://github.com/mace-dev" target="blank">
+        <img src="images/github.svg" alt="GitHub Profile" class="github-icon">
+      </a>
+      <a href="https://www.linkedin.com/in/matthew-mason-41ab3a258/" target="blank">
+        <img src="images/linkedin.svg" alt="LinkedIn Profile" class="linkedin-icon">
+      </a>
+      
+    </div>
+    
+    <!-- About Me Section -->
+    <div id="about" class="section about-section">
+      <div id="aboutMeDetails" class="about-me-details">
+        <img src="images/wave.svg" alt="About Me Logo" class="logo"> <!-- Add an image if you have one -->
+ 
+        <div class="description">
+          <h4>Who am I</h4>
+          <p>A dedicated software enthusiast with a strong passion for technology. Currently, I'm pursuing a degree in Computer Science and Application Development. This journey has provided me with valuable insights into building software from the ground up.</p>
+          <h4>What I do</h4>
+          <p>I enjoy both the creative and problem-solving aspects of software development. Whether it's designing user-friendly interfaces or creating robust systems, I thrive on the challenges and rewards of the development process. My experiences have equipped me with a diverse skill set, enabling me to adapt and succeed in various projects and situations.</p>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project Section -->
+    <div id="projects" class="section">
+      <p class="contact-heading">Projects</p>
+      <div class="project-card">
+        <img src="images/chequemate.svg" alt="Logo" class="logo">
+        <h3 class="title">ChequeMate v1.9.0</h3>
+        <p class="subtitle">Chrome Extension</p>
+        <div class="description">
+          <p>Streamline payments.<br>Create Invoices.<br>Manage documents.<br>Get paid faster.</p>
+        </div>
+        <div class="icons">
+          <img src="images/html.svg" alt="HTML Icon">
+          <img src="images/css.svg" alt="CSS Icon">
+          <img src="images/js.svg" alt="JavaScript Icon">
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="images/cyclops.svg" alt="Logo" class="logo">
+        <h3 class="title">Cyclops v2.1.0</h3>
+        <p class="subtitle">Native Web App</p>
+        <div class="description">
+          <p>Sign Up / Login Portal.<br>Forgot Password function.<br>Email Retrieval function.<br>Firebase Auth.</p>
+        </div>
+        <div class="icons">
+          <img src="images/flutter.svg" alt="Flutter Icon">
+          <img src="images/firebase.svg" alt="Firebase Icon">
+        </div>
+      </div>
+      <!-- Repeat for other projects -->
+    </div>
+
+    <!-- Connect Section -->
+    <div id="hire" class="section">
+      <div class="name-container">
+        <p class="contact-heading">Get in Touch</p>
+        <form action="https://formspree.io/f/xbjnwbow" method="POST" class="contact-form">
+          <input type="text" id="name" name="name" placeholder="Your Name" class="contact-input">
+          <input type="email" id="email" name="email" placeholder="Your Email" class="contact-input">
+          <input type="text" id="location" name="location" placeholder="Your Country" class="contact-input">
+          <textarea id="message" name="message" placeholder="Your Message" class="contact-input"></textarea>
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; MaceSoftwareSolutions 2024</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
